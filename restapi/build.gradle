@@ -8,10 +8,20 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'groovy'
+
+war {
+    baseName = 'restapi'
+    version = ''
+    manifest {
+        attributes 'Implementation-Title': project.name,
+                'Implementation-Version': project.version
+    }
+}
 
 bootJar {
     baseName = 'rest-api'
