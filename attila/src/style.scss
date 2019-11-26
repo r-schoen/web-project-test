@@ -1,0 +1,42 @@
+$color1: #71737A;
+$color2: #9BB5FB;
+$color3: #E7ECFA;
+$color4: #4C587A;
+$color5: #B7BBC7;
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: $color4;
+}
+
+.sources, #navbar {
+    a,i,b  {
+        color:$color1;
+    }
+    color:$color4;
+}
+h1,h2,h3,h4 {
+    font-family: 'Playfair Display', serif;
+    display:block;
+    color: $color4;
+    text-align:center;
+}
+#navbar {
+  text-align: center;
+}
+.vdp-datepicker {
+    float:left;
+    margin-right: 30px;
+}
+.container {
+    background-color: $color3;
+}
+#header {
+    border-bottom: 5px solid $color5;
+    margin-bottom: 10px;
+}
+#navbar {
+    border-bottom: 2px solid  $color5;
+}
