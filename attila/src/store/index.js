@@ -43,7 +43,6 @@ export default new Vuex.Store({
       state.todoData[payload.index][payload.column] = payload.contents
     },
     deleteTodo(state, index) {
-      console.log(index)
       state.todoData.splice(index,1)
     },
     addTodo(state){
